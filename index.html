@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elbadéco - Lotus Aroma | مبخرة فاخرة مصنوعة يدوياً</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Elbadéco Logo">
+                    <span>Elbadéco</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">المميزات</a>
+                    <a href="#offers">العروض</a>
+                    <a href="#gallery">المعرض</a>
+                    <a href="#testimonials">آراء العملاء</a>
+                    <a href="#order" class="btn-primary">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="assets/images/hero.png" alt="Lotus Aroma">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">أناقة تعطر بيتك</h1>
+            <p class="hero-subtitle">لمسة فخامة لكل زاوية في منزلك</p>
+            <button class="btn-hero" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">اطلب الآن</button>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2>⏰ العرض ينتهي قريباً!</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">يوم</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">ساعة</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">دقيقة</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">ثانية</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>لماذا Lotus Aroma؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>صناعة يدوية</h3>
+                    <p>مصنوعة بحب وعناية من قبل حرفيين مغاربة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>تصميم فاخر</h3>
+                    <p>شكل أنيق وأنثوي يزين أي زاوية</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>رائحة تدوم</h3>
+                    <p>عطر فاخر يملأ المنزل برائحة ساحرة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>هدية مثالية</h3>
+                    <p>الخيار الأمثل لكل المناسبات والاحتفالات</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>توصيل مجاني</h3>
+                    <p>توصيل سريع وآمن إلى باب منزلك</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                    <h3>الدفع عند الاستلام</h3>
+                    <p>ادفع فقط عند استلام طلبك بأمان</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2>🔥 عروض خاصة محدودة 🔥</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">عرض 1</div>
+                    <h3>واحدة</h3>
+                    <div class="offer-price">
+                        <span class="price-amount">60</span>
+                        <span class="price-currency">درهم</span>
+                    </div>
+                    <ul class="offer-features">
+                        <li>✓ مبخرة واحدة فقط</li>
+                        <li>✓ توصيل مجاني</li>
+                        <li>✓ دفع عند الاستلام</li>
+                    </ul>
+                    <button class="btn-offer" onclick="selectOffer('واحدة', 60)">اطلب الآن</button>
+                </div>
+
+                <div class="offer-card featured">
+                    <div class="offer-badge best">الأفضل</div>
+                    <h3>إثنان</h3>
+                    <div class="offer-price">
+                        <span class="price-amount">100</span>
+                        <span class="price-currency">درهم</span>
+                    </div>
+                    <ul class="offer-features">
+                        <li>✓ مبخرتان فاخرتان</li>
+                        <li>✓ توصيل مجاني</li>
+                        <li>✓ دفع عند الاستلام</li>
+                        <li>✓ توفير 20 درهم</li>
+                    </ul>
+                    <button class="btn-offer featured" onclick="selectOffer('إثنان', 100)">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery_1.png" alt="Lotus Aroma Close-up">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery_2.png" alt="Two Lotus Aroma Burners">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery_3.png" alt="Lifestyle - Using Lotus Aroma">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery_4.png" alt="Luxury Incense Burner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>آراء عملائنا الراضين</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"جودة رائعة وسعر مناسب جداً. المنتج أفضل من توقعاتي!"</p>
+                    <p class="testimonial-author">- فاطمة من الرباط</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"وصلني الطلب بسرعة والتوصيل مجاني. خدمة ممتازة جداً!"</p>
+                    <p class="testimonial-author">- أم محمد من فاس</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"شكلها أنيق جداً في الصالون. كل ضيفاتي سألن عن مصدرها!"</p>
+                    <p class="testimonial-author">- ليلى من مراكش</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form" id="order">
+        <div class="container">
+            <h2>📋 نموذج الطلب</h2>
+            <form id="orderForm" class="form">
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0612345678" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">المدينة *</label>
+                        <select id="city" name="city" required>
+                            <option value="">اختر المدينة</option>
+                            <option value="الرباط">الرباط</option>
+                            <option value="الدار البيضاء">الدار البيضاء</option>
+                            <option value="فاس">فاس</option>
+                            <option value="مراكش">مراكش</option>
+                            <option value="طنجة">طنجة</option>
+                            <option value="أكادير">أكادير</option>
+                            <option value="سلا">سلا</option>
+                            <option value="سلماس">سلماس</option>
+                            <option value="تطوان">تطوان</option>
+                            <option value="الحسيمة">الحسيمة</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">العنوان *</label>
+                        <input type="text" id="address" name="address" placeholder="الحي / الشارع" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="offer">اختر العرض *</label>
+                    <select id="offer" name="offer" required>
+                        <option value="">اختر العرض</option>
+                        <option value="واحدة - 60 درهم">واحدة - 60 درهم</option>
+                        <option value="إثنان - 100 درهم">إثنان - 100 درهم (الأفضل)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">تأكيد الطلب الآن</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/212688838829?text=السلام عليكم، أود الاستفسار عن منتج Lotus Aroma" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>تواصل عبر واتساب</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Elbadéco. جميع الحقوق محفوظة. | منتج مغربي 100%</p>
+            <p>البيع داخل المغرب فقط | التوصيل: يوم ونصف تقريباً</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
